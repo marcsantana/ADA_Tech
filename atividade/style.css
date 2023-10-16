@@ -168,4 +168,27 @@ div#motive-tech {
       height: 50px;
 }
 
+form {
+      display: flex;
+      flex-direction: column;
+      margin: 0px 10px 10px 10px;
+      font-weight: 600;
+}
+form label {
+      margin: 3px 0px;
+}
+
+form input, form textarea {
+      width: 70%;
+}
+
+button {
+      width: 20%;
+      align-self:flex-start;
+      margin: 10px 0px 0px 0px;
+      border-radius: 4px;
+      text-decoration: none;
+      border: 1px solid rgba(0, 0, 0, 0.466);
+}
+
 
