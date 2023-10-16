@@ -4,11 +4,14 @@
 
 :root {
       --font-total: 'Open Sans', sans-serif;
+      --cor-bk: #eaf2ef;
+      --cor-bk-sec: #d2d8d643;
 }
 
 body {
       font-family: var(--font-total);
-      color: black;
+      background-color: var(--cor-bk);
+      color: #0f0f0f;
 }
 
 * {
@@ -28,28 +31,49 @@ body {
 }
 
 #nav-items a {
+      color: #0f0f0f;
+      font-weight: 600;
       text-decoration: none;
+}
+
+#nav-items a:hover {
+      color: #0f0f0f76;
+      transition: 200ms ease;
 }
 
 .container {
       margin: .625rem 0rem;
 }
 
-div#about-me {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+.bk-color {
+      background-color: var(--cor-bk-sec);
+      border-radius: 0 0 .625rem .625rem;
 }
 
+div#about-me {
+      display: flex;
+      justify-content: space-between;
+}
+  
 #eu-texto {
+      width: 40%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 1.25rem;
+      margin-left: .625rem;
+      justify-content: center;
+}
+  
+.eu-foto {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 }
 
 .title {
       text-align: center;
+      padding-top: 15px;
       padding-bottom: .9375rem;
 }
 
@@ -58,9 +82,10 @@ div#about-me {
 }
 
 .eu-foto img {
-      width: 18.75rem;
-      height: 18.75rem;
-      border-radius: 5%;
+      width: 15.625rem;
+      height: 15.625rem;
+      border-radius: 50%;
+      padding: 1.25rem;
 }
 
 div#form-academica {
@@ -92,8 +117,10 @@ div#jobs {
 }
 
 .general-hobby {
+      justify-content: space-around;
+
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       flex-wrap: wrap;
       list-style-type: none;
       align-items: center;
@@ -107,9 +134,10 @@ div#jobs {
 }
 
 .general-hobby img {
-      width: 18.75rem;
-      height: 18.75rem;
-      border-radius: 5%;
+      width: 10.625rem;
+      height: 10.625rem;
+      border-radius: 50%;
+      margin-bottom: .9375rem;
 }
 
 div#motive-tech {
